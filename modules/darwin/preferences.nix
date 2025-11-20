@@ -9,11 +9,11 @@
       mru-spaces = false;
       persistent-apps = [
         {
-          app = "/nix/store/5f1ghi3sgdpv5m9d8jhi4i3434rqkp7w-zen-beta-1.17.6b/Applications/Zen Browser (Beta).app";
+          app = "/nix/store/ng9zkcgvaxqwa3x08iqjnajba9p126cc-zen-beta-1.17.7b/Applications/Zen Browser (Beta).app";
         }
         { app = "/System/Applications/Mail.app"; }
-        { app = "/nix/store/cb89wc26l0fzaywsr1y8ds0vwsxi9mr0-ghostty-bin-1.2.3/Applications/Ghostty.app"; }
-        { app = "/nix/store/xcwka2yvbvip4lmc1m15gyq99wfwbahn-vesktop-1.6.1/Applications/Vesktop.app"; }
+        { app = "/nix/store/ym20gfwdwaynpv30w294wdn9x3wk3vsv-ghostty-bin-1.2.3/Applications/Ghostty.app"; }
+        { app = "/nix/store/apxjgqn5sf1dvy22v25q8qg8r1l66ybd-vesktop-1.6.1/Applications/Vesktop.app"; }
         { app = "/System/Applications/System Settings.app"; }
       ];
     };
