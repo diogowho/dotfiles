@@ -1,5 +1,6 @@
 {
   inputs,
+  config,
   ...
 }:
 {
@@ -8,7 +9,7 @@
   ];
 
   programs.zen-browser = {
-    enable = true;
+    inherit (config.sys.profiles.graphical) enable;
 
     policies = {
       AppAutoUpdate = false;
@@ -23,7 +24,6 @@
       Cookies = {
         Allow = [
           "https://bsky.app"
-          "https://bsky.social"
           "https://tangled.org"
           "https://github.com"
           "https://steamcommunity.com"
@@ -47,6 +47,7 @@
           "https://catsky.social"
           "https://gandi.net"
           "https://stripe.com"
+          "https://pdsls.dev"
           "http://10.100.0.1"
           "http://[fd00:1:1:1::1]"
         ];
@@ -119,17 +120,17 @@
           position = 101;
           isEssential = true;
         };
-        "Tangled" = {
-          id = "c1d9c4f8-ec95-4f41-93fd-76a92f5fdf16";
-          workspace = spaces."Personal".id;
-          url = "https://tangled.org";
-          position = 102;
-          isEssential = true;
-        };
         "Bluesky" = {
           id = "f58aa4ce-5915-41c8-b117-b11c32531198";
           workspace = spaces."Personal".id;
           url = "https://catsky.social";
+          position = 102;
+          isEssential = true;
+        };
+        "Tangled" = {
+          id = "c1d9c4f8-ec95-4f41-93fd-76a92f5fdf16";
+          workspace = spaces."Personal".id;
+          url = "https://tangled.org";
           position = 103;
           isEssential = true;
         };
