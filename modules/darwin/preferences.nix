@@ -9,7 +9,7 @@
       mru-spaces = false;
       persistent-apps = [
         {
-          app = "/nix/store/ng9zkcgvaxqwa3x08iqjnajba9p126cc-zen-beta-1.17.7b/Applications/Zen Browser (Beta).app";
+          app = "/nix/store/r1wlckxhcgkvc7amz9gw308q7gklqniw-zen-beta-1.17.8b/Applications/Zen Browser (Beta).app";
         }
         { app = "/System/Applications/Mail.app"; }
         { app = "/nix/store/ym20gfwdwaynpv30w294wdn9x3wk3vsv-ghostty-bin-1.2.3/Applications/Ghostty.app"; }
