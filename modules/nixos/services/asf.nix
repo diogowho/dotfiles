@@ -25,8 +25,6 @@ in
       group = "archisteamfarm";
     };
 
-    networking.firewall.allowedTCPPorts = [ cfg.port ];
-
     services = {
       archisteamfarm = {
         enable = true;
