@@ -1,7 +1,7 @@
 keys:
   - &diogo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICCTbCHJ0avif6MQ7izXlHHaubNsOhU2xf9lMvXKLyUQ
 
-  - &iris ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEGlO5HxU1363XyNAvH4Cmi5lvoM5x0XQrWroelZ34Cx
+  - &iris ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOqp4EZ4+Rnb7hJa1n7neYZqWlPQlKfFKLhzbGNYSwej
 
 creation_rules:
   - path_regex: ^secrets/diogo\.yaml$

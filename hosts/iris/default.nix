@@ -1,7 +1,6 @@
 {
   imports = [
     ./hardware.nix
-    ./networking.nix
   ];
 
   sys = {
