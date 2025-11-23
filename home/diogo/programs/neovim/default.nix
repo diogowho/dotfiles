@@ -41,7 +41,8 @@
       tailwindcss-language-server
       emmet-language-server
       gopls
-      sourcekit-lsp
+      rust-analyzer
+      # sourcekit-lsp
     ];
 
     extraLuaConfig = ''
