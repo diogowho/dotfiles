@@ -63,6 +63,7 @@
         "signal"
         "raycast"
         "sketch@beta"
+        "tidal"
       ]
       ++ lib.optionals config.sys.profiles.gaming.enable [
         "steam"
