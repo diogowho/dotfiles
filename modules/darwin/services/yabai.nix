@@ -44,14 +44,17 @@ in
         yabai -m rule --add app="Sketch Beta" space=misc
         yabai -m rule --add app="Reminders" space=misc
 
-        yabai -m space 4 --label stack --layout stack
+        yabai -m space 4 --label media --layout stack
+        yabai -m rule --add app="Music" space=media
+        yabai -m rule --add app="Podcasts" space=media
+        yabai -m rule --add app="TIDAL" space=media
+
+        yabai -m space 5 --label stack --layout stack
         yabai -m rule --add app="Vesktop" space=stack
         yabai -m rule --add app="Signal" space=stack
         yabai -m rule --add app="Messages" space=stack
         yabai -m rule --add app="Mail" space=stack
         yabai -m rule --add app="WhatsApp" space=stack
-        yabai -m rule --add app="Podcasts" space=stack
-        yabai -m rule --add app="Music" space=stack
         yabai -m rule --add app="Steam" space=stack
 
         yabai -m rule --add label="System Settings" app="^System Settings$" manage=off
