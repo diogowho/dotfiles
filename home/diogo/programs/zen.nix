@@ -80,10 +80,10 @@
           "https://addons.mozilla.org/firefox/downloads/latest/return-youtube-dislikes/latest.xpi"
           "https://addons.mozilla.org/firefox/downloads/latest/sponsorblock/latest.xpi"
           "https://addons.mozilla.org/firefox/downloads/latest/steam-database/latest.xpi"
-          "https://addons.mozilla.org/firefox/downloads/latest/styl-us/latest.xpi"
           "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi"
           "https://addons.mozilla.org/firefox/downloads/latest/refined-github-/latest.xpi"
           "https://addons.mozilla.org/firefox/downloads/latest/web-scrobbler/latest.xpi"
+          "https://addons.mozilla.org/firefox/downloads/latest/sink-it-for-reddit/latest.xpi"
         ];
       };
       SearchEngines = {
