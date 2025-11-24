@@ -4,6 +4,7 @@
     ./fail2ban.nix
     ./firewall.nix
     ./openssh.nix
+    ./tailscale.nix
   ];
 
   networking = {

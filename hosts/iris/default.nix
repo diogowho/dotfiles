@@ -10,6 +10,7 @@
       asf.enable = true;
       pocket-id.enable = true;
     };
+    networking.tailscale.enable = true;
   };
 
   system.stateVersion = "25.05";
