@@ -48,8 +48,7 @@
           "https://gandi.net"
           "https://stripe.com"
           "https://pdsls.dev"
-          "http://10.100.0.1"
-          "http://[fd00:1:1:1::1]"
+          "http://100.100.10.2"
         ];
       };
       SanitizeOnShutdown = {
