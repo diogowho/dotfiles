@@ -4,7 +4,6 @@
     ./fail2ban.nix
     ./firewall.nix
     ./openssh.nix
-    ./wireguard.nix
   ];
 
   networking = {

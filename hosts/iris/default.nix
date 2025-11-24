@@ -10,7 +10,6 @@
       asf.enable = true;
       pocket-id.enable = true;
     };
-    networking.wireguard.enable = true;
   };
 
   system.stateVersion = "25.05";
