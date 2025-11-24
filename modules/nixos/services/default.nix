@@ -3,5 +3,6 @@
     ./caddy.nix
     ./docker.nix
     ./asf.nix
+    ./pocket-id.nix
   ];
 }

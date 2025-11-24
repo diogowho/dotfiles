@@ -8,6 +8,7 @@
     services = {
       caddy.enable = true;
       asf.enable = true;
+      pocket-id.enable = true;
     };
     networking.wireguard.enable = true;
   };
