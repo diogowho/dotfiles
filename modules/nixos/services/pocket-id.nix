@@ -51,10 +51,10 @@ in
         enable = true;
 
         settings = {
-          db = [
+          dbs = [
             {
               path = "/var/lib/pocket-id/data/pocket-id.db";
-              replicas = [
+              replica = [
                 {
                   type = "s3";
                   bucket = "dahlia";
