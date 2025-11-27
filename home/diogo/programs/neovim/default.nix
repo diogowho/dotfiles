@@ -26,6 +26,7 @@
       which-key-nvim
       nvim-treesitter.withAllGrammars
       cord-nvim
+      copilot-vim
     ];
     extraPackages = with pkgs; [
       nixd

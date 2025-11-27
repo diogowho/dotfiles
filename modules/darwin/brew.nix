@@ -59,11 +59,10 @@
       casks = [
         "aldente"
         "font-maple-mono"
-        "signal"
         "raycast"
         "sketch@beta"
-        "tidal"
         "tailscale-app"
+        "orion"
       ]
       ++ lib.optionals config.sys.profiles.gaming.enable [
         "steam"

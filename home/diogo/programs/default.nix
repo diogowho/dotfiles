@@ -8,11 +8,9 @@
     ./btop.nix
     ./neovim
     ./tmux.nix
-    ./zen.nix
     ./fzf.nix
     ./ripgrep.nix
     ./vesktop.nix
-    ./zed.nix
     ./ghostty.nix
   ];
 
