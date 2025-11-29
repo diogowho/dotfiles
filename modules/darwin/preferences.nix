@@ -9,9 +9,7 @@
       minimize-to-application = true;
       mru-spaces = false;
       persistent-apps = [
-        {
-          app = "/Applications/Orion.app";
-        }
+        { app = "/Applications/Orion.app"; }
         { app = "/System/Applications/Mail.app"; }
         { app = "${pkgs.ghostty-bin}/Applications/Ghostty.app"; }
         { app = "${pkgs.vesktop}/Applications/Vesktop.app"; }
