@@ -39,7 +39,7 @@
     settings = {
       user = {
         name = "Diogo";
-        email = "hello" + "@" + "diogo" + "." + "fi";
+        email = "hello" + "@" + "diogocastro" + "." + "net";
       };
 
       aliases = {

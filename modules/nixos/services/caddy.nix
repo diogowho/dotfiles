@@ -13,7 +13,7 @@ in
 {
   options = {
     sys.services.caddy = mkServiceOption "caddy" {
-      domain = "diogo.fi";
+      domain = "diogocastro.net";
     };
   };
 
