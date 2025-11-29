@@ -48,7 +48,7 @@
       masApps = {
         # "TestFlight" = 899247664;
         # "WhatsApp" = 310633997;
-        # "Bitwarden" = 1352778147;
+        "Bitwarden" = 1352778147;
       };
 
       brews = [

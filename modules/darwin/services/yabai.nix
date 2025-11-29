@@ -21,7 +21,7 @@ in
       config = {
         mouse_follows_focus = "on";
         split_ratio = 0.50;
-        layout = "bsp";
+        layout = "stack";
         top_padding = 8;
         bottom_padding = 8;
         left_padding = 8;
@@ -35,22 +35,22 @@ in
         yabai -m rule --add app="Zen Browser (Beta)" space=web
         yabai -m rule --add app="Orion" space=web
 
-        yabai -m space 2 --label dev
+        yabai -m space 2 --label dev --layout bsp
         yabai -m rule --add app="Ghostty" space=dev
         yabai -m rule --add app="Xcode" space=dev
         yabai -m rule --add app="Zed" space=dev
 
-        yabai -m space 3 --label misc --layout stack
+        yabai -m space 3 --label misc
         yabai -m rule --add app="Notes" space=misc
         yabai -m rule --add app="Sketch Beta" space=misc
         yabai -m rule --add app="Reminders" space=misc
 
-        yabai -m space 4 --label media --layout stack
+        yabai -m space 4 --label media
         yabai -m rule --add app="Music" space=media
         yabai -m rule --add app="Podcasts" space=media
         yabai -m rule --add app="TIDAL" space=media
 
-        yabai -m space 5 --label stack --layout stack
+        yabai -m space 5 --label stack
         yabai -m rule --add app="Vesktop" space=stack
         yabai -m rule --add app="Signal" space=stack
         yabai -m rule --add app="Messages" space=stack
