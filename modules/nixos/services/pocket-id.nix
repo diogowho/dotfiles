@@ -68,7 +68,7 @@ in
                 {
                   type = "s3";
                   bucket = "dahlia";
-                  path = "pocket-id.db";
+                  path = "pocket-id";
                   endpoint = "https://s3.gra.io.cloud.ovh.net/";
                   region = "gra";
                   force-path-style = true;
