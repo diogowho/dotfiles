@@ -19,6 +19,16 @@ in
   };
 
   config = mkIf cfg.enable {
+    users.groups.pocketid-data = { };
+    users.users."pocket-id".extraGroups = [ "pocketid-data" ];
+    users.users."litestream".extraGroups = [ "pocketid-data" ];
+
+    systemd.tmpfiles.rules = [
+      "Z /var/lib/pocket-id 0770 pocket-id pocketid-data -"
+      "Z /var/lib/pocket-id/data 0770 pocket-id pocketid-data -"
+      "f /var/lib/pocket-id/data/pocket-id.db 0660 pocket-id pocketid-data -"
+    ];
+
     sops.secrets.pocket-id = {
       sopsFile = "${self}/secrets/services/pocket-id.yaml";
       owner = "pocket-id";
@@ -54,12 +64,14 @@ in
           dbs = [
             {
               path = "/var/lib/pocket-id/data/pocket-id.db";
-              replica = [
+              replicas = [
                 {
                   type = "s3";
                   bucket = "dahlia";
-                  path = "pocket-id/pocket-id.db";
-                  endpoint = "s3.gra.io.cloud.ovh.net";
+                  path = "pocket-id.db";
+                  endpoint = "https://s3.gra.io.cloud.ovh.net/";
+                  region = "gra";
+                  force-path-style = true;
                 }
               ];
             }
