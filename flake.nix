@@ -25,12 +25,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    homebrew = {
-      type = "github";
-      owner = "zhaofengli";
-      repo = "nix-homebrew";
-    };
-
     flake-parts = {
       type = "github";
       owner = "hercules-ci";
