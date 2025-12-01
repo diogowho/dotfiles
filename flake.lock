@@ -82,11 +82,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1764510518,
-        "narHash": "sha256-hDFkciyjhjMLRC/qXCREWX1dgq8kopiuJdwXdfVlJuQ=",
+        "lastModified": 1764544324,
+        "narHash": "sha256-GVBGjO7UsmzLrlOJV8NlKSxukHaHencrJqWkCA6FkqI=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "83053e1d337f33e0b48250588006e4b9df2f0d9d",
+        "rev": "e4e25a8c310fa45f2a8339c7972dc43d2845a612",
         "type": "github"
       },
       "original": {
@@ -97,11 +97,24 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1764474957,
-        "narHash": "sha256-fTYgVn9ElCimU7mvJk6ZpCmUSPI9DmCJjzYrmvDJA08=",
-        "rev": "890f57fde071de281cd0e950cd80ea3e1ab55e75",
+        "lastModified": 1764557259,
+        "narHash": "sha256-5MfPluf82zcE5MsFI6dD6lCfS8cUNDrlxy/DKqsGtSE=",
+        "rev": "0d70460758949966e91d9ecb823b821f963cefbb",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.05pre904445.890f57fde071/nixexprs.tar.xz"
+        "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.05pre904781.0d7046075894/nixexprs.tar.xz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1764557259,
+        "narHash": "sha256-5MfPluf82zcE5MsFI6dD6lCfS8cUNDrlxy/DKqsGtSE=",
+        "rev": "0d70460758949966e91d9ecb823b821f963cefbb",
+        "type": "tarball",
+        "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.05pre904781.0d7046075894/nixexprs.tar.xz"
       },
       "original": {
         "type": "tarball",
@@ -117,7 +130,8 @@
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "sops": "sops",
-        "systems": "systems"
+        "systems": "systems",
+        "website": "website"
       }
     },
     "sops": {
@@ -152,6 +166,24 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "website": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1764590613,
+        "narHash": "sha256-rD3knt7yDybdiOGEIHq/Vyjgst3HzV4IGWOXA923an8=",
+        "owner": "diogowho",
+        "repo": "website",
+        "rev": "b9df6cd560e0a20ff928a5e741d560e7b18c294f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "diogowho",
+        "repo": "website",
         "type": "github"
       }
     }
