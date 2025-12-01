@@ -5,5 +5,6 @@
     ./asf.nix
     ./pocket-id.nix
     ./website.nix
+    ./open-webui.nix
   ];
 }
