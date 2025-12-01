@@ -12,8 +12,6 @@ let
   cfg = config.sys.services.open-webui;
 in
 {
-  imports = [ inputs.website.nixosModules.default ];
-
   options = {
     sys.services.open-webui = mkServiceOption "open-webui" {
       domain = "ai.${config.networking.domain}";
