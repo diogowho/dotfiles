@@ -50,6 +50,12 @@
       repo = "sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    website = {
+      type = "github";
+      owner = "diogowho";
+      repo = "website";
+    };
   };
 
   outputs =

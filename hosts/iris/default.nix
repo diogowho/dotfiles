@@ -10,6 +10,7 @@
       caddy.enable = true;
       asf.enable = true;
       pocket-id.enable = true;
+      website.enable = true;
     };
     networking.tailscale.enable = true;
   };
