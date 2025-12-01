@@ -30,15 +30,15 @@ in
         port = cfg.port;
         environment = {
           WEBUI_URL = "https://${cfg.domain}";
-          ENABLE_SIGNUP = false;
-          ENABLE_PASSWORD_AUTH = false;
-          ENABLE_OAUTH_SIGNUP = true;
-          ENABLE_LOGIN_FORM = false;
+          ENABLE_SIGNUP = "false";
+          ENABLE_PASSWORD_AUTH = "false";
+          ENABLE_OAUTH_SIGNUP = "true";
+          ENABLE_LOGIN_FORM = "false";
           OAUTH_SCOPES = "openid email profile groups";
-          OAUTH_UPDATE_PICTURE_ON_LOGIN = true;
+          OAUTH_UPDATE_PICTURE_ON_LOGIN = "true";
           DEFAULT_USER_ROLE = "user";
-          ENABLE_ADMIN_EXPORT = false;
-          ENABLE_ADMIN_CHAT_ACCESS = false;
+          ENABLE_ADMIN_EXPORT = "false";
+          ENABLE_ADMIN_CHAT_ACCESS = "false";
         };
 
         environmentFile = config.sops.secrets.open-webui.path;
