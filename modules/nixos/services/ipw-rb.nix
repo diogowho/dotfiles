@@ -14,10 +14,8 @@ in
 {
   imports = [ inputs.ipw-rb.nixosModules.default ];
 
-  options = {
-    sys.services.ipw-rb = mkServiceOption "ipw-rb" {
-      domain = "rb.${config.networking.domain}";
-    };
+  options.sys.services.ipw-rb = mkServiceOption "ipw-rb" {
+    domain = "rb.${config.networking.domain}";
   };
 
   config = mkIf cfg.enable {

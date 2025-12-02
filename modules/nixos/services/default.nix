@@ -6,5 +6,6 @@
     ./pocket-id.nix
     ./website.nix
     ./open-webui.nix
+    ./ipw-rb.nix
   ];
 }

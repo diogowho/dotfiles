@@ -24,6 +24,7 @@
       go
       rustc
       cargo
+      github-copilot-cli
       ;
   };
 }
