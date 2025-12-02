@@ -11,11 +11,9 @@ let
   cfg = config.sys.services.pocket-id;
 in
 {
-  options = {
-    sys.services.pocket-id = mkServiceOption "pocket-id" {
-      domain = "sso.${config.networking.domain}";
-      port = 1411;
-    };
+  options.sys.services.pocket-id = mkServiceOption "pocket-id" {
+    domain = "sso.diogo.fi";
+    port = 1411;
   };
 
   config = mkIf cfg.enable {

@@ -1,6 +1,7 @@
 let
   mainIf = "ens3";
-in {
+in
+{
   networking = {
     useDHCP = false;
 

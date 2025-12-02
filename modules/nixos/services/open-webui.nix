@@ -12,11 +12,9 @@ let
   cfg = config.sys.services.open-webui;
 in
 {
-  options = {
-    sys.services.open-webui = mkServiceOption "open-webui" {
-      domain = "ai.${config.networking.domain}";
-      port = 1422;
-    };
+  options.sys.services.open-webui = mkServiceOption "open-webui" {
+    domain = "ai.${config.networking.domain}";
+    port = 1422;
   };
 
   config = mkIf cfg.enable {

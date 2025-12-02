@@ -11,10 +11,8 @@ let
   cfg = config.sys.services.asf;
 in
 {
-  options = {
-    sys.services.asf = mkServiceOption "asf" {
-      port = 1242;
-    };
+  options.sys.services.asf = mkServiceOption "asf" {
+    port = 1242;
   };
 
   config = mkIf cfg.enable {

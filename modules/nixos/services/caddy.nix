@@ -11,10 +11,8 @@ let
   cfg = config.sys.services.caddy;
 in
 {
-  options = {
-    sys.services.caddy = mkServiceOption "caddy" {
-      domain = "diogocastro.net";
-    };
+  options.sys.services.caddy = mkServiceOption "caddy" {
+    domain = "diogocastro.net";
   };
 
   config = mkIf cfg.enable {
