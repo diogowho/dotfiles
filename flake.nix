@@ -56,6 +56,12 @@
       owner = "diogowho";
       repo = "website";
     };
+
+    ipw-rb = {
+      type = "github";
+      owner = "daviidxd";
+      repo = "ipw";
+    };
   };
 
   outputs =

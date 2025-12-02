@@ -12,6 +12,7 @@
       pocket-id.enable = true;
       website.enable = true;
       open-webui.enable = true;
+      ipw-rb.enable = true;
     };
     networking.tailscale.enable = true;
   };
