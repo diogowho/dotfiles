@@ -55,12 +55,14 @@
       type = "github";
       owner = "diogowho";
       repo = "website";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     ipw-rb = {
       type = "github";
       owner = "daviidxd";
       repo = "ipw";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
