@@ -38,6 +38,8 @@ in
           EMAILS_VERIFIED = true;
           DB_PROVIDER = "postgres";
           KEYS_STORAGE = "database";
+          FILE_BACKEND = "s3";
+          UPLOAD_PATH = "pocket-id/uploads";
         };
 
         environmentFile = config.sops.secrets.pocket-id.path;
