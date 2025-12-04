@@ -82,7 +82,7 @@ in
 
         # wal archiving
         archive_mode = "on";
-        archive_command = "/bin/true";
+        # archive_command = "/bin/true";
 
         # wal writing
         wal_compression = "on";
