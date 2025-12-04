@@ -14,6 +14,10 @@
       };
 
       iris = { };
+
+      heather = {
+        arch = "aarch64";
+      };
     };
   };
 }
