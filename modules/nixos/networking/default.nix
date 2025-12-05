@@ -1,6 +1,6 @@
 { lib, config, ... }:
 let
-  inherit (lib) mkForce mkDefault mkIf;
+  inherit (lib) mkForce mkDefault;
 in
 {
   imports = [
@@ -8,6 +8,7 @@ in
     ./firewall.nix
     ./openssh.nix
     ./tailscale.nix
+    ./cloud.nix
   ];
 
   networking = {
