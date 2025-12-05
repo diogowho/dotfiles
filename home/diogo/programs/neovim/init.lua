@@ -455,7 +455,12 @@ require("nvim-tree").setup({
   hijack_netrw = true,
   update_focused_file = { enable = true },
   filters = { dotfiles = false },
-  git = { enable = false },
+  git = { enable = true },
+  actions = {
+    open_file = {
+      quit_on_open = true,
+    },
+  },
 })
 
 vim.keymap.set("n", "<C-b>", ":NvimTreeToggle<CR>", { desc = "Toggle file explorer" })

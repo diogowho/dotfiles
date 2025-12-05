@@ -25,6 +25,7 @@
       rustc
       cargo
       github-copilot-cli
+      pnpm_9
       ;
   };
 }

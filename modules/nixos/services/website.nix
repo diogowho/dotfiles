@@ -19,9 +19,6 @@ in
   };
 
   config = mkIf cfg.enable {
-    services.diogocastro-website = {
-      enable = true;
-      domain = cfg.domain;
-    };
+    services.diogocastro-website.enable = true;
   };
 }
