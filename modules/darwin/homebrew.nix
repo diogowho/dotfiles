@@ -32,6 +32,7 @@
       "font-maple-mono"
       "sketch@beta"
       "orion"
+      "signal"
     ]
     ++ lib.optionals config.sys.profiles.gaming.enable [
       "steam"
