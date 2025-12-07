@@ -184,11 +184,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765125179,
-        "narHash": "sha256-YW2e3T0XBvlACDVxRkreIKFMXoJPx70V1XlCQjxDVTU=",
+        "lastModified": 1765125493,
+        "narHash": "sha256-q2iSX6p6RyyGoJDMbY0s0y+pfeJ00sBhcrPDbCW8Ayw=",
         "owner": "diogowho",
         "repo": "website",
-        "rev": "e7d0dd4d2bd43ec107f9720243e85b549695e83c",
+        "rev": "f4b2b39c22ddfefdaad91d85d52ec687dd005cde",
         "type": "github"
       },
       "original": {
