@@ -5,7 +5,10 @@
       enable = true;
       package = pkgs.iptables;
 
-      allowedTCPPorts = [ ];
+      allowedTCPPorts = [
+        443
+        80
+      ];
       allowedUDPPorts = [ ];
 
       allowedTCPPortRanges = [ ];
