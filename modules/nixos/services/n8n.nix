@@ -26,8 +26,6 @@ in
           N8N_PORT = cfg.port;
           N8N_PROTOCOL = "https";
           N8N_HIRING_BANNER_ENABLED = false;
-          N8N_PUBLIC_API_SWAGGERUI_DISABLED = true;
-          N8N_HIDE_USAGE_PAGE = true;
           DB_TYPE = "postgresdb";
           DB_POSTGRESDB_USER = "n8n";
           DB_POSTGRESDB_PASSWORD = "n8n";
