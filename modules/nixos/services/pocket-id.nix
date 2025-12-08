@@ -12,7 +12,7 @@ let
 in
 {
   options.sys.services.pocket-id = mkServiceOption "pocket-id" {
-    domain = "id.diogocastro.net";
+    domain = "id.${config.networking.domain}";
     port = 1411;
   };
 

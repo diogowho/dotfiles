@@ -12,7 +12,7 @@ let
 in
 {
   options.sys.services.n8n = mkServiceOption "n8n" {
-    domain = "n8n.diogocastro.net";
+    domain = "n8n.${config.networking.domain}";
     port = 5678;
   };
 

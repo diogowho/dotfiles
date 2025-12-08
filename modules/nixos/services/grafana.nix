@@ -12,7 +12,7 @@ let
 in
 {
   options.sys.services.grafana = mkServiceOption "grafana" {
-    domain = "metrics.diogocastro.net";
+    domain = "metrics.${config.networking.domain}";
     port = 3003;
   };
 
