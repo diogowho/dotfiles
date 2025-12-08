@@ -38,11 +38,7 @@ in
           ENABLE_ADMIN_EXPORT = "false";
           ENABLE_ADMIN_CHAT_ACCESS = "false";
           DATABASE_TYPE = "postgresql";
-          DATABASE_USER = "openwebui";
-          DATABASE_PASSWORD = "openwebui";
-          DATABASE_NAME = "openwebui";
-          DATABASE_HOST = "localhost";
-          DATABASE_PORT = "5432";
+          DATABASE_URL = "postgresql://openwebui:openwebui@localhost:5432/openwebui";
         };
 
         environmentFile = config.sops.secrets.open-webui.path;
