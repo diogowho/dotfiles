@@ -23,7 +23,14 @@ in
       group = "caddy";
     };
 
-    networking = { inherit (cfg) domain; };
+    networking = {
+      inherit (cfg) domain;
+
+      firewall.allowedTCPPorts = [
+        80
+        443
+      ];
+    };
 
     security.acme = {
       acceptTerms = true;
