@@ -8,5 +8,6 @@
     ./website.nix
     ./open-webui.nix
     ./ipw-rb.nix
+    ./n8n.nix
   ];
 }

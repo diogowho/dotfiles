@@ -11,7 +11,7 @@
       asf.enable = true;
       pocket-id.enable = true;
       website.enable = true;
-      open-webui.enable = true;
+      n8n.enable = true;
       ipw-rb.enable = true;
     };
 
