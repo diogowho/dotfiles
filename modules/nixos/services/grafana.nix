@@ -44,7 +44,7 @@ in
           {
             name = "Prometheus";
             type = "prometheus";
-            url = "http://${cfg.host}:9090";
+            url = "https://${cfg.domain}/prometheus";
             isDefault = true;
           }
         ];
