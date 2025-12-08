@@ -44,7 +44,8 @@ in
 
       prometheus = {
         enable = true;
-        listenAddress = "${cfg.host}:9090";
+        listenAddress = cfg.host;
+        port = 9090;
         webExternalUrl = "https://${cfg.domain}/prometheus";
 
         scrapeConfigs = [
