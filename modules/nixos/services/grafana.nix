@@ -30,6 +30,14 @@ in
             enforce_domain = true;
             enable_gzip = true;
           };
+
+          database = {
+            type = "postgres";
+            host = "localhost:5432";
+            name = "grafana";
+            user = "grafana";
+            password = "grafana";
+          };
         };
 
         provision.datasources.settings.datasources = [
@@ -68,6 +76,14 @@ in
         ];
 
         exporters.node.enable = true;
+      };
+
+      postgresql = {
+        ensureDatabases = [ "grafana" ];
+        ensureUsers = lib.singleton {
+          name = "grafana";
+          ensureDBOwnership = true;
+        };
       };
 
       caddy.virtualHosts.${cfg.domain}.extraConfig = ''
