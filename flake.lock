@@ -102,11 +102,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1764671310,
-        "narHash": "sha256-3pX059g7lYNBIPoz/kSrx7r8CCJ3eIGd9s20xIdX8ho=",
+        "lastModified": 1765205644,
+        "narHash": "sha256-9G16Fvea5E7NRfazXzQmY+T/bMQ8uQin27F9nQ6OMGk=",
         "owner": "daviidxd",
         "repo": "ipw",
-        "rev": "24fd271ee8b7668581936880f750308afa81876b",
+        "rev": "50b8e325728d94a2451baeeebfd5fb4cc9e69ddd",
         "type": "github"
       },
       "original": {
