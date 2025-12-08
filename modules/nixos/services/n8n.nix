@@ -25,7 +25,7 @@ in
           N8N_HOST = cfg.domain;
           N8N_PORT = cfg.port;
           N8N_PROTOCOL = "https";
-          N8N_HIRING_BANNER_ENABLED = false;
+          N8N_HIRING_BANNER_ENABLED = "false";
           DB_TYPE = "postgresdb";
           DB_POSTGRESDB_USER = "n8n";
           DB_POSTGRESDB_PASSWORD = "n8n";
