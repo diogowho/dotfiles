@@ -12,6 +12,8 @@
       pocket-id.enable = true;
       website.enable = true;
       n8n.enable = true;
+      grafana.enable = true;
+
       ipw-rb.enable = true;
     };
 

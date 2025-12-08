@@ -7,7 +7,9 @@
     ./postgresql.nix
     ./website.nix
     ./open-webui.nix
-    ./ipw-rb.nix
     ./n8n.nix
+    ./grafana.nix
+
+    ./ipw-rb.nix
   ];
 }
