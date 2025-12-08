@@ -7,6 +7,7 @@
     profiles.headless.enable = true;
     services = {
       caddy.enable = true;
+      postgresql.enable = true;
       asf.enable = true;
       pocket-id.enable = true;
       website.enable = true;

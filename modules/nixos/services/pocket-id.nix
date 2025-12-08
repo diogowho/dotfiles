@@ -40,9 +40,18 @@ in
           KEYS_STORAGE = "database";
           FILE_BACKEND = "s3";
           UPLOAD_PATH = "pocket-id/uploads";
+          DB_CONNECTION_STRING = "postgresql://pocketid:pocketid@localhost:5432/pocketid";
         };
 
         environmentFile = config.sops.secrets.pocket-id.path;
+      };
+
+      postgresql = {
+        ensureDatabases = [ "pocketid" ];
+        ensureUsers = lib.singleton {
+          name = "pocketid";
+          ensureDBOwnership = true;
+        };
       };
 
       caddy.virtualHosts.${cfg.domain}.extraConfig = ''reverse_proxy ${cfg.host}:${toString cfg.port}'';

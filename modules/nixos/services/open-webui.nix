@@ -37,9 +37,23 @@ in
           DEFAULT_USER_ROLE = "user";
           ENABLE_ADMIN_EXPORT = "false";
           ENABLE_ADMIN_CHAT_ACCESS = "false";
+          DATABASE_TYPE = "postgresql";
+          DATABASE_USER = "openwebui";
+          DATABASE_PASSWORD = "openwebui";
+          DATABASE_NAME = "openwebui";
+          DATABASE_HOST = "localhost";
+          DATABASE_PORT = "5432";
         };
 
         environmentFile = config.sops.secrets.open-webui.path;
+      };
+
+      postgresql = {
+        ensureDatabases = [ "openwebui" ];
+        ensureUsers = lib.singleton {
+          name = "openwebui";
+          ensureDBOwnership = true;
+        };
       };
 
       caddy.virtualHosts.${cfg.domain}.extraConfig = ''reverse_proxy ${cfg.host}:${toString cfg.port}'';
