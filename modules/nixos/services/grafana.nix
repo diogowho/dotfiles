@@ -49,7 +49,7 @@ in
             generic_oauth = {
               enabled = true;
               client_id = "fc40c281-9f05-4907-8c85-17c265fbc7c5";
-              client_secret = builtins.readFile config.sops.secrets.grafana.path;
+              client_secret = "$__file{${config.sops.secrets.grafana.path}}";
               scopes = "openid profile email";
               auth_url = "https://id.diogocastro.net/authorize";
               token_url = "https://id.diogocastro.net/api/oidc/token";
