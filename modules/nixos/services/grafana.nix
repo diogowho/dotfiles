@@ -49,7 +49,7 @@ in
 
           auth.oauth_allow_insecure_email_lookup = true;
 
-          auth.basic.enabled = false;
+          "auth.basic".enabled = false;
 
           "auth.generic_oauth" = {
             enabled = true;
