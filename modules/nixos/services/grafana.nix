@@ -17,6 +17,10 @@ in
   };
 
   config = mkIf cfg.enable {
+    sops.secrets.grafana = {
+      sopsFile = "${self}/secrets/services/grafana.yaml";
+    };
+
     services = {
       grafana = {
         enable = true;
@@ -37,6 +41,25 @@ in
             name = "grafana";
             user = "grafana";
             password = "grafana";
+          };
+
+          security.disable_gravatar = true;
+
+          auth = {
+            generic_oauth = {
+              enabled = true;
+              client_id = "fc40c281-9f05-4907-8c85-17c265fbc7c5";
+              client_secret = builtins.readFile config.sops.secrets.grafana.path;
+              scopes = "openid profile email";
+              auth_url = "https://id.diogocastro.net/authorize";
+              token_url = "https://id.diogocastro.net/api/oidc/token";
+              api_url = "";
+              signout_redirect_url = "";
+              allow_sign_up = false;
+              auto_login = "false";
+              email_attribute_name = "email:primary";
+              skip_org_role_sync = false;
+            };
           };
         };
 
