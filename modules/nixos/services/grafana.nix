@@ -49,8 +49,11 @@ in
 
           auth.oauth_allow_insecure_email_lookup = true;
 
+          auth.basic.enabled = false;
+
           "auth.generic_oauth" = {
             enabled = true;
+            name = "Pocket ID";
             client_id = "fc40c281-9f05-4907-8c85-17c265fbc7c5";
             client_secret = "$__file{${config.sops.secrets.grafana.path}}";
             scopes = "openid profile email";
