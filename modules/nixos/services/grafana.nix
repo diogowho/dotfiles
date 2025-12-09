@@ -47,7 +47,7 @@ in
 
           security.disable_gravatar = true;
 
-          "auth.oauth_allow_insecure_email_lookup" = true;
+          auth.oauth_allow_insecure_email_lookup = true;
 
           "auth.generic_oauth" = {
             enabled = true;
