@@ -64,7 +64,7 @@ in
             allow_sign_up = false;
             auto_login = false;
             email_attribute_name = "email:primary";
-            skip_org_role_sync = false;
+            skip_org_role_sync = true;
           };
         };
 
