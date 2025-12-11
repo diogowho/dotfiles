@@ -47,11 +47,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765469280,
-        "narHash": "sha256-ymRFNOc3Q3XpIfVG5nWX59hVMA/1FotxfoRE5p7TKLg=",
+        "lastModified": 1765469352,
+        "narHash": "sha256-vpi9Rsq3pvBcgfnvzqy5Qz5b+vFGvK1WDJ/K4Zd3VDE=",
         "ref": "refs/heads/main",
-        "rev": "a052d53cac6520b2aed7f1af59890b39cbd6e6d8",
-        "revCount": 2,
+        "rev": "04a09b863981462d0b2bb1f404559985af99a46c",
+        "revCount": 3,
         "type": "git",
         "url": "https://codeberg.org/diogocastro/pkgs"
       },
