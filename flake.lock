@@ -47,11 +47,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765469352,
-        "narHash": "sha256-vpi9Rsq3pvBcgfnvzqy5Qz5b+vFGvK1WDJ/K4Zd3VDE=",
+        "lastModified": 1765471307,
+        "narHash": "sha256-yTd74ELkcFefHSBwbhWS9dd++vZAUOBF2DzGbRJGckU=",
         "ref": "refs/heads/main",
-        "rev": "04a09b863981462d0b2bb1f404559985af99a46c",
-        "revCount": 3,
+        "rev": "483f455bed7bdc9709c98b22ae34f11947875068",
+        "revCount": 5,
         "type": "git",
         "url": "https://codeberg.org/diogocastro/pkgs"
       },
@@ -115,46 +115,6 @@
         "type": "github"
       }
     },
-    "ipw-rb": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1765393640,
-        "narHash": "sha256-WoGS5MlaaPCyx5PJgy8EcKTJKxLZgWB5mzR9rfcdlvA=",
-        "owner": "daviidxd",
-        "repo": "ipw",
-        "rev": "0a5e7a7b0272eed2a1ba9f07cf9c46a6b7b2c68d",
-        "type": "github"
-      },
-      "original": {
-        "owner": "daviidxd",
-        "repo": "ipw",
-        "type": "github"
-      }
-    },
-    "kowo": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1765467223,
-        "narHash": "sha256-ieSeSzFfsGAbUGsf83Jw5hWKA2Epmv3mkcobBhCpFlA=",
-        "owner": "diogowho",
-        "repo": "kowo.dev",
-        "rev": "5ff83fc5165d8c98b5503e1c6ed16acb80cad2bc",
-        "type": "github"
-      },
-      "original": {
-        "owner": "diogowho",
-        "repo": "kowo.dev",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1765270179,
@@ -176,8 +136,6 @@
         "easy-hosts": "easy-hosts",
         "flake-parts": "flake-parts",
         "home-manager": "home-manager",
-        "ipw-rb": "ipw-rb",
-        "kowo": "kowo",
         "nixpkgs": "nixpkgs",
         "sops": "sops",
         "systems": "systems"
