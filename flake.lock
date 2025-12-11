@@ -47,11 +47,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765477034,
-        "narHash": "sha256-k91nVCs8905mKXHpPN5I7sAxNToxLOQ44Tsp2yDYQpk=",
+        "lastModified": 1765479130,
+        "narHash": "sha256-cNHKBZR6VQ9oXaKAEyLYfSw8krLVcbCbdneJLDBNceg=",
         "ref": "refs/heads/main",
-        "rev": "92efc7ac0f09cfb05a30687329147598d7e8cec5",
-        "revCount": 1,
+        "rev": "5f055f199edace88187927031e09aebf127222fe",
+        "revCount": 2,
         "type": "git",
         "url": "https://codeberg.org/diogocastro/nvim"
       },
@@ -122,11 +122,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765461410,
-        "narHash": "sha256-AVZ1y5tfTGqf5zJx6uY52KHN2pP9gGF9RMQ3meBVKIg=",
+        "lastModified": 1765479109,
+        "narHash": "sha256-38CYqa9Uolab2uzvsk/T9CC65ywmEr5bvgQJHCSURYI=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "7b34e428f31ce52baabda53e52bf14002e1c0625",
+        "rev": "574f6d3526c98d6f2df020a22298349a7014dda7",
         "type": "github"
       },
       "original": {
