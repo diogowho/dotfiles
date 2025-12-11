@@ -56,6 +56,12 @@
       url = "https://codeberg.org/diogocastro/pkgs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    diogonvim = {
+      type = "git";
+      url = "https://codeberg.org/diogocastro/nvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

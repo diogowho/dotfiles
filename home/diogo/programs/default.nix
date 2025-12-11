@@ -6,7 +6,7 @@
     ./zsh.nix
     ./ohmyposh
     ./btop.nix
-    ./neovim
+    ./neovim.nix
     ./tmux.nix
     ./fzf.nix
     ./ripgrep.nix

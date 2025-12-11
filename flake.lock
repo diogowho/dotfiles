@@ -40,6 +40,26 @@
         "type": "github"
       }
     },
+    "diogonvim": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1765477034,
+        "narHash": "sha256-k91nVCs8905mKXHpPN5I7sAxNToxLOQ44Tsp2yDYQpk=",
+        "ref": "refs/heads/main",
+        "rev": "92efc7ac0f09cfb05a30687329147598d7e8cec5",
+        "revCount": 1,
+        "type": "git",
+        "url": "https://codeberg.org/diogocastro/nvim"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://codeberg.org/diogocastro/nvim"
+      }
+    },
     "diogopkgs": {
       "inputs": {
         "nixpkgs": [
@@ -132,6 +152,7 @@
       "inputs": {
         "catppuccin": "catppuccin",
         "darwin": "darwin",
+        "diogonvim": "diogonvim",
         "diogopkgs": "diogopkgs",
         "easy-hosts": "easy-hosts",
         "flake-parts": "flake-parts",

@@ -42,6 +42,8 @@
       lg = "lazygit";
       grep = "rg";
       find = "fd";
+      vi = "nvim";
+      vim = "nvim";
     };
   };
 
