@@ -47,11 +47,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765479130,
-        "narHash": "sha256-cNHKBZR6VQ9oXaKAEyLYfSw8krLVcbCbdneJLDBNceg=",
+        "lastModified": 1765479504,
+        "narHash": "sha256-qUZTmTFJvACJbkpr8f7HxJMJP7LxYQInxD1wA4ygL8M=",
         "ref": "refs/heads/main",
-        "rev": "5f055f199edace88187927031e09aebf127222fe",
-        "revCount": 2,
+        "rev": "4a50033e356353a9e4fce335eedeb8e14e8d7734",
+        "revCount": 3,
         "type": "git",
         "url": "https://codeberg.org/diogocastro/nvim"
       },
