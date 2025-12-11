@@ -1,6 +1,7 @@
 {
   imports = [
     ./hardware.nix
+    ./networking.nix
   ];
 
   sys = {
@@ -18,17 +19,7 @@
       kowo.enable = true;
     };
 
-    networking = {
-      tailscale.enable = true;
-
-      cloud = {
-        interface = "ens3";
-        ipv4 = "51.75.255.245";
-        ipv6 = "2001:41d0:305:2100::7785";
-        gateway4 = "51.75.248.1";
-        gateway6 = "2001:41d0:305:2100::1";
-      };
-    };
+    networking.tailscale.enable = true;
   };
 
   system.stateVersion = "25.05";

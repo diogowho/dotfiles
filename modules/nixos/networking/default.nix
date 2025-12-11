@@ -8,7 +8,6 @@ in
     ./firewall.nix
     ./openssh.nix
     ./tailscale.nix
-    ./cloud.nix
   ];
 
   networking = {
