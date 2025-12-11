@@ -1,5 +1,4 @@
 {
-  inputs,
   self,
   lib,
   config,
@@ -12,11 +11,7 @@ let
   cfg = config.sys.services.website;
 in
 {
-  imports = [ inputs.website.nixosModules.default ];
-
-  options.sys.services.website = mkServiceOption "website" {
-    domain = config.networking.domain;
-  };
+  options.sys.services.website = mkServiceOption "website" { };
 
   config = mkIf cfg.enable {
     services.diogocastro-website.enable = true;

@@ -9,6 +9,7 @@
     ./networking
     ./sudo.nix
     ./secrets.nix
+    inputs.diogopkgs.nixosModules.default
     ./services
     ./users
   ];

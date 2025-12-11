@@ -51,10 +51,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    website = {
-      type = "github";
-      owner = "diogowho";
-      repo = "website";
+    diogopkgs = {
+      type = "git";
+      url = "https://codeberg.org/diogocastro/pkgs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
