@@ -82,11 +82,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1765337252,
-        "narHash": "sha256-HuWQp8fM25fyWflbuunQkQI62Hg0ecJxWD52FAgmxqY=",
+        "lastModified": 1765461410,
+        "narHash": "sha256-AVZ1y5tfTGqf5zJx6uY52KHN2pP9gGF9RMQ3meBVKIg=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "13cc1efd78b943b98c08d74c9060a5b59bf86921",
+        "rev": "7b34e428f31ce52baabda53e52bf14002e1c0625",
         "type": "github"
       },
       "original": {
@@ -102,16 +102,36 @@
         ]
       },
       "locked": {
-        "lastModified": 1765274340,
-        "narHash": "sha256-+6+3v6FXMszrTGznmE9/oUBh6Nw7h1A2/zb7QJ5W038=",
+        "lastModified": 1765393640,
+        "narHash": "sha256-WoGS5MlaaPCyx5PJgy8EcKTJKxLZgWB5mzR9rfcdlvA=",
         "owner": "daviidxd",
         "repo": "ipw",
-        "rev": "f527d84883d32b2b7851441a9d4ce9831850abfe",
+        "rev": "0a5e7a7b0272eed2a1ba9f07cf9c46a6b7b2c68d",
         "type": "github"
       },
       "original": {
         "owner": "daviidxd",
         "repo": "ipw",
+        "type": "github"
+      }
+    },
+    "kowo": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1765467223,
+        "narHash": "sha256-ieSeSzFfsGAbUGsf83Jw5hWKA2Epmv3mkcobBhCpFlA=",
+        "owner": "diogowho",
+        "repo": "kowo.dev",
+        "rev": "5ff83fc5165d8c98b5503e1c6ed16acb80cad2bc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "diogowho",
+        "repo": "kowo.dev",
         "type": "github"
       }
     },
@@ -136,6 +156,7 @@
         "flake-parts": "flake-parts",
         "home-manager": "home-manager",
         "ipw-rb": "ipw-rb",
+        "kowo": "kowo",
         "nixpkgs": "nixpkgs",
         "sops": "sops",
         "systems": "systems",
