@@ -1,5 +1,4 @@
 {
-  inputs,
   self,
   lib,
   config,
@@ -12,16 +11,9 @@ let
   cfg = config.sys.services.ipw-rb;
 in
 {
-  imports = [ inputs.ipw-rb.nixosModules.default ];
-
-  options.sys.services.ipw-rb = mkServiceOption "ipw-rb" {
-    domain = "rb.${config.networking.domain}";
-  };
+  options.sys.services.ipw-rb = mkServiceOption "ipw-rb" { };
 
   config = mkIf cfg.enable {
-    services.ipw-rb-website = {
-      enable = true;
-      domain = cfg.domain;
-    };
+    services.ipw-rb.enable = true;
   };
 }

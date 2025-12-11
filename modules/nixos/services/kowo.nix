@@ -1,5 +1,4 @@
 {
-  inputs,
   self,
   lib,
   config,
@@ -12,8 +11,6 @@ let
   cfg = config.sys.services.kowo;
 in
 {
-  imports = [ inputs.kowo.nixosModules.default ];
-
   options.sys.services.kowo = mkServiceOption "kowo" { };
 
   config = mkIf cfg.enable {
