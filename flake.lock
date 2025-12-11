@@ -40,6 +40,26 @@
         "type": "github"
       }
     },
+    "diogopkgs": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1765469094,
+        "narHash": "sha256-QfqJUKWHfK2m/le447SeoVNH+pFEi1pxqIyJXxAA1Gk=",
+        "ref": "refs/heads/main",
+        "rev": "e8317395c1226fcbf4c912b2bb568591eca4d3d9",
+        "revCount": 1,
+        "type": "git",
+        "url": "https://codeberg.org/diogocastro/pkgs"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://codeberg.org/diogocastro/pkgs"
+      }
+    },
     "easy-hosts": {
       "locked": {
         "lastModified": 1755470564,
@@ -152,6 +172,7 @@
       "inputs": {
         "catppuccin": "catppuccin",
         "darwin": "darwin",
+        "diogopkgs": "diogopkgs",
         "easy-hosts": "easy-hosts",
         "flake-parts": "flake-parts",
         "home-manager": "home-manager",
@@ -159,8 +180,7 @@
         "kowo": "kowo",
         "nixpkgs": "nixpkgs",
         "sops": "sops",
-        "systems": "systems",
-        "website": "website"
+        "systems": "systems"
       }
     },
     "sops": {
@@ -195,26 +215,6 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
-        "type": "github"
-      }
-    },
-    "website": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1765391681,
-        "narHash": "sha256-pOXp1vdI1gRGyf4FI4LSZ2vedsS6GSuL9E1yqpNvP+g=",
-        "owner": "diogowho",
-        "repo": "website",
-        "rev": "64995c0a91f387659ee18e385ffce095a778fa54",
-        "type": "github"
-      },
-      "original": {
-        "owner": "diogowho",
-        "repo": "website",
         "type": "github"
       }
     }
