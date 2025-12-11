@@ -11,5 +11,6 @@
     ./grafana.nix
 
     ./ipw-rb.nix
+    ./kowo.nix
   ];
 }

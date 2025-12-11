@@ -64,6 +64,13 @@
       repo = "ipw";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    kowo = {
+      type = "github";
+      owner = "diogowho";
+      repo = "kowo.dev";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

@@ -15,6 +15,7 @@
       grafana.enable = true;
 
       ipw-rb.enable = true;
+      kowo.enable = true;
     };
 
     networking = {
