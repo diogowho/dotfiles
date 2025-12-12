@@ -6,7 +6,6 @@
         runtimeInputs = with pkgs; [
           nixfmt
           shfmt
-          stylua
         ];
 
         settings = {
@@ -30,11 +29,6 @@
               includes = [
                 "*.sh"
               ];
-            };
-
-            stylua = {
-              command = "stylua";
-              includes = [ "*.lua" ];
             };
           };
         };

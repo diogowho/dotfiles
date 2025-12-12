@@ -18,7 +18,6 @@
     inherit (pkgs)
       nodejs
       just
-      bun
       age
       sops
       go

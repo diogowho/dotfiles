@@ -32,13 +32,10 @@ in
       extraConfig = ''
         yabai -m space 1 --label web
         yabai -m rule --add app="Safari" space=web
-        yabai -m rule --add app="Zen Browser (Beta)" space=web
-        yabai -m rule --add app="Orion" space=web
 
         yabai -m space 2 --label dev --layout bsp
         yabai -m rule --add app="Ghostty" space=dev
         yabai -m rule --add app="Xcode" space=dev
-        yabai -m rule --add app="Zed" space=dev
 
         yabai -m space 3 --label misc
         yabai -m rule --add app="Notes" space=misc
@@ -48,7 +45,6 @@ in
         yabai -m space 4 --label media
         yabai -m rule --add app="Music" space=media
         yabai -m rule --add app="Podcasts" space=media
-        yabai -m rule --add app="TIDAL" space=media
 
         yabai -m space 5 --label stack
         yabai -m rule --add app="Vesktop" space=stack

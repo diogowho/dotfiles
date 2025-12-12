@@ -87,7 +87,7 @@
   };
 
   programs.delta = {
-    enable = true;
+    inherit (config.programs.git) enable;
     enableGitIntegration = true;
     options = {
       line-numbers = true;
