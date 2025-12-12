@@ -23,6 +23,7 @@
       "uBlock Origin Lite" = 6745342698;
       "SponsorBlock" = 1573461917;
       "Kagi" = 1622835804;
+      "Userscripts" = 1463298887;
     };
 
     brews = [
