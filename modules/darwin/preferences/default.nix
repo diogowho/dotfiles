@@ -2,6 +2,7 @@
   imports = [
     ./dock.nix
     ./keyboard.nix
+    ./safari.nix
   ];
 
   system.defaults = {
