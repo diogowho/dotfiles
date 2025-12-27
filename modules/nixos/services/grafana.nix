@@ -55,7 +55,6 @@ in
             name = "grafana";
             user = "$__file{${config.sops.secrets."grafana/database_user".path}}";
             password = "$__file{${config.sops.secrets."grafana/database_password".path}}";
-            ssl_mode = "require";
           };
 
           security.disable_gravatar = true;
