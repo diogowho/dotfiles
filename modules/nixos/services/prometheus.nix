@@ -14,10 +14,12 @@ in
   options.sys.services.prometheus = mkServiceOption "prometheus" {
     port = 9090;
     domain = "prometheus.${config.networking.domain}";
-    scrapeTargets = mkOption {
-      type = types.listOf types.str;
-      default = [ ];
-      description = "List of targets to scrape (host:port)";
+    extraConfig = {
+      scrapeTargets = mkOption {
+        type = types.listOf types.str;
+        default = [ ];
+        description = "List of targets to scrape (host:port)";
+      };
     };
   };
 
