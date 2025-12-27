@@ -35,7 +35,7 @@ in
       ];
 
       checkConfig = true;
-      enableTCPIP = false;
+      enableTCPIP = true;
 
       authentication = ''
         local all all peer
