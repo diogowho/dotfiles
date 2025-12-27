@@ -52,7 +52,6 @@ in
         # keep-sorted start
         "bitwarden-cli"
         "mas"
-        "netbirdio/tap/netbird"
         # keep-sorted end
       ];
 
@@ -68,6 +67,7 @@ in
       ++ optionals config.sys.profiles.gaming.enable [
         # keep-sorted start
         "crossover"
+        "nvidia-geforce-now"
         "prismlauncher"
         "steam"
         # keep-sorted end

@@ -3,14 +3,16 @@
   _class = "nixos";
 
   imports = [
-    ../shared
     inputs.home-manager.nixosModules.home-manager
+    inputs.diogopkgs.nixosModules.default
+    # keep-sorted start
+    ../shared
     ./headless.nix
     ./networking
-    ./sudo.nix
     ./secrets.nix
-    inputs.diogopkgs.nixosModules.default
     ./services
+    ./sudo.nix
+    # keep-sorted end
   ];
 
   nix = {

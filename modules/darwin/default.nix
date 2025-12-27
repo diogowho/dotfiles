@@ -2,16 +2,18 @@
 {
   _class = "darwin";
 
-  system.defaults.CustomUserPreferences."com.apple.AdLib".allowApplePersonalizedAdvertising = false;
-
   imports = [
-    ../shared
     inputs.home-manager.darwinModules.home-manager
+    # keep-sorted start
+    ../shared
+    ./homebrew
+    ./networking
     ./preferences
-    ./networking.nix
-    ./homebrew.nix
     ./services
+    # keep-sorted end
   ];
+
+  system.defaults.CustomUserPreferences."com.apple.AdLib".allowApplePersonalizedAdvertising = false;
 
   system = {
     stateVersion = 6;

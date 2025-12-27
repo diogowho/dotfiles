@@ -15,7 +15,7 @@ in
 
   config = mkIf cfg.enable {
     services.diogocastro-website.enable = true;
-    # services.kowo.enable = true;
+    services.kowo.enable = true;
     services.ipw-rb.enable = true;
     services.chris-ipw.enable = true;
   };

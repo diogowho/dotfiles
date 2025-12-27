@@ -11,9 +11,7 @@ let
   cfg = config.sys.services.yabai;
 in
 {
-  options = {
-    sys.services.yabai = mkServiceOption "yabai" { };
-  };
+  options.sys.services.yabai = mkServiceOption "yabai" { };
 
   config = mkIf cfg.enable {
     services.yabai = {

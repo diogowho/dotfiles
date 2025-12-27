@@ -1,8 +1,10 @@
 {
   imports = [
+    # keep-sorted start
     ./dock.nix
     ./keyboard.nix
     ./safari.nix
+    # keep-sorted end
   ];
 
   system.defaults = {
