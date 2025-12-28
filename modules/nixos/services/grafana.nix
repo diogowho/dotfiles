@@ -5,7 +5,7 @@
   ...
 }:
 let
-  inherit (lib) mkIf;
+  inherit (lib) mkIf mkOption types;
   inherit (self.lib) mkServiceOption;
 
   cfg = config.sys.services.grafana;
@@ -14,6 +14,18 @@ in
   options.sys.services.grafana = mkServiceOption "grafana" {
     domain = "metrics.${config.networking.domain}";
     port = 3003;
+    extraConfig = {
+      prometheusPort = mkOption {
+        type = types.port;
+        default = 9090;
+        description = "Port for the prometheus service";
+      };
+      scrapeTargets = mkOption {
+        type = types.listOf types.str;
+        default = [ ];
+        description = "List of targets to scrape (host:port)";
+      };
+    };
   };
 
   config = mkIf cfg.enable {
@@ -85,8 +97,25 @@ in
           {
             name = "Prometheus";
             type = "prometheus";
-            url = "https://${config.sys.services.prometheus.domain}";
+            url = "http://${cfg.host}:${toString cfg.prometheusPort}";
             isDefault = true;
+          }
+        ];
+      };
+
+      prometheus = {
+        enable = true;
+        listenAddress = cfg.host;
+        port = cfg.prometheusPort;
+
+        scrapeConfigs = [
+          {
+            job_name = "node";
+            static_configs = [
+              {
+                targets = [ "localhost:9100" ] ++ cfg.scrapeTargets;
+              }
+            ];
           }
         ];
       };

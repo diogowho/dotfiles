@@ -11,12 +11,11 @@
     services = {
       # keep-sorted start block=yes
       caddy.enable = true;
-      grafana.enable = true;
-      node-exporter.enable = true;
-      prometheus = {
+      grafana = {
         enable = true;
         scrapeTargets = [ "100.100.20.2:9100" ];
       };
+      node-exporter.enable = true;
       website.enable = true;
       # keep-sorted end
     };

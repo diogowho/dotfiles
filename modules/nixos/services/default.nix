@@ -5,7 +5,6 @@
     ./grafana.nix
     ./node-exporter.nix
     ./postgresql.nix
-    ./prometheus.nix
     ./website.nix
     # keep-sorted end
   ];
