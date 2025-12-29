@@ -6,6 +6,7 @@
     ./node-exporter.nix
     ./postgresql.nix
     ./website.nix
+    ./pocket-id.nix
     # keep-sorted end
   ];
 }

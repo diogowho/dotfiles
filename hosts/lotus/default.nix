@@ -17,6 +17,7 @@
       };
       node-exporter.enable = true;
       website.enable = true;
+      pocket-id.enable = true;
       # keep-sorted end
     };
 
