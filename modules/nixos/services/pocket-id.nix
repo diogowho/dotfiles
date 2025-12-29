@@ -23,23 +23,29 @@ in
       group = "pocket-id";
     };
 
-    services.pocket-id = {
-      enable = true;
+    services = {
+      pocket-id = {
+        enable = true;
 
-      settings = {
-        APP_URL = "https://${cfg.domain}";
-        DB_PROVIDER = "postgres";
-        FILE_BACKEND = "database"; # please don't mind me
-        KEYS_STORAGE = "database";
-        HOST = cfg.host;
-        PORT = cfg.port;
-        ANALYTICS_DISABLED = true;
-        UI_CONFIG_DISABLED = true;
-        EMAILS_VERIFIED = true;
-        ALLOW_USER_SIGNUPS = "withToken";
+        settings = {
+          APP_URL = "https://${cfg.domain}";
+          DB_PROVIDER = "postgres";
+          FILE_BACKEND = "database"; # please don't mind me
+          KEYS_STORAGE = "database";
+          HOST = cfg.host;
+          PORT = cfg.port;
+          ANALYTICS_DISABLED = true;
+          UI_CONFIG_DISABLED = true;
+          EMAILS_VERIFIED = true;
+          ALLOW_USER_SIGNUPS = "withToken";
+        };
+
+        environmentFile = config.sops.secrets.pocket-id.path;
       };
 
-      environmentFile = config.sops.secrets.pocket-id.path;
+      caddy.virtualHosts.${cfg.domain}.extraConfig = ''
+        reverse_proxy ${cfg.host}:${toString cfg.port}
+      '';
     };
   };
 }
