@@ -51,6 +51,9 @@ in
       brews = [
         # keep-sorted start
         "bitwarden-cli"
+        "colima"
+        "docker"
+        "docker-compose"
         "mas"
         # keep-sorted end
       ];
