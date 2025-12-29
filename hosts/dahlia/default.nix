@@ -15,7 +15,7 @@
       # keep-sorted end
     };
 
-    networking.netbird.enable = true;
+    networking.tailscale.enable = true;
   };
 
   system.stateVersion = "25.11";

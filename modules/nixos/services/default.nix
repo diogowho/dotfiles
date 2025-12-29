@@ -4,9 +4,9 @@
     ./caddy.nix
     ./grafana.nix
     ./node-exporter.nix
+    ./pocket-id.nix
     ./postgresql.nix
     ./website.nix
-    ./pocket-id.nix
     # keep-sorted end
   ];
 }

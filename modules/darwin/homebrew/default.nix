@@ -37,6 +37,7 @@ in
         "Bitwarden" = 1352778147;
         "Kagi" = 1622835804;
         "SponsorBlock" = 1573461917;
+        "Tailscale" = 1475387142;
         "Userscripts" = 1463298887;
         "WhatsApp" = 310633997;
         "uBlock Origin Lite" = 6745342698;

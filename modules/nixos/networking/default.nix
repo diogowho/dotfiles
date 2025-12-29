@@ -7,8 +7,8 @@ in
     # keep-sorted start
     ./fail2ban.nix
     ./firewall.nix
-    ./netbird.nix
     ./openssh.nix
+    ./tailscale.nix
     # keep-sorted end
   ];
 
@@ -21,7 +21,10 @@ in
     networkmanager = {
       enable = true;
       dns = "systemd-resolved";
-      unmanaged = [ "type:bridge" ];
+      unmanaged = [
+        "interface-name:tailscale*"
+        "type:bridge"
+      ];
     };
 
     usePredictableInterfaceNames = mkDefault true;

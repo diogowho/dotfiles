@@ -1,7 +1,6 @@
 {
   imports = [
     # keep-sorted start
-    ./netbird.nix
     ./openssh.nix
     # keep-sorted end
   ];
