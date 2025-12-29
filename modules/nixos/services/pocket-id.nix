@@ -27,7 +27,7 @@ in
       enable = true;
 
       settings = {
-        APP_URL = cfg.domain;
+        APP_URL = "https://${cfg.domain}";
         DB_PROVIDER = "postgres";
         FILE_BACKEND = "database"; # please don't mind me
         KEYS_STORAGE = "database";
