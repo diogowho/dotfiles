@@ -75,11 +75,6 @@ in
         "nvidia-geforce-now"
         "prismlauncher"
         # keep-sorted end
-      ]
-      ++ optionals config.sys.profiles.laptop.enable [
-        # keep-sorted start
-        "aldente"
-        # keep-sorted end
       ];
     };
   };
