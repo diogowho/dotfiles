@@ -20,8 +20,9 @@
     };
 
     diogopkgs = {
-      type = "git";
-      url = "https://codeberg.org/diogocastro/pkgs";
+      type = "github";
+      owner = "diogowho";
+      repo = "pkgs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
