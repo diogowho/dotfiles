@@ -3,7 +3,6 @@
   programs.ghostty = {
     inherit (config.sys.profiles.graphical) enable;
     package = pkgs.ghostty-bin;
-    enableZshIntegration = config.programs.zsh.enable;
     installBatSyntax = config.programs.bat.enable;
     settings = {
       font-family = "Maple Mono";
@@ -17,6 +16,7 @@
       window-save-state = "always";
       bell-features = "no-audio";
       macos-option-as-alt = "left";
+      term = "xterm-256color";
     };
   };
 }

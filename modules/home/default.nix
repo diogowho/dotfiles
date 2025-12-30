@@ -8,6 +8,7 @@
     ./home.nix
     ./profiles.nix
     ./secrets.nix
+    ./shell.nix
     # keep-sorted end
   ];
 }

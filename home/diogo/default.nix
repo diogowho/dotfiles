@@ -4,9 +4,12 @@
 
   imports = [
     # keep-sorted start
-    ./catppuccin.nix
-    ./programs
+    ./cli
+    ./gui
+    ./packages.nix
     ./system
+    ./themes
+    ./tui
     # keep-sorted end
   ];
 

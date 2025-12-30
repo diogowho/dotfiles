@@ -1,10 +1,9 @@
 {
   imports = [
     # keep-sorted start
-    ./dock.nix
-    ./secrets.nix
-    ./shell
-    ./ssh.nix
+    ./btop.nix
+    ./lazygit.nix
+    ./neovim
     # keep-sorted end
   ];
 }

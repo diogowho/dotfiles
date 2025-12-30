@@ -1,10 +1,9 @@
 {
   imports = [
     # keep-sorted start
-    ./dock.nix
-    ./secrets.nix
-    ./shell
-    ./ssh.nix
+    ./aliases.nix
+    ./ohmyposh
+    ./zsh.nix
     # keep-sorted end
   ];
 }

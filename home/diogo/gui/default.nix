@@ -1,10 +1,7 @@
 {
   imports = [
     # keep-sorted start
-    ./dock.nix
-    ./secrets.nix
-    ./shell
-    ./ssh.nix
+    ./ghostty.nix
     # keep-sorted end
   ];
 }

@@ -82,10 +82,6 @@
     lfs.enable = true;
   };
 
-  programs.lazygit = {
-    enable = config.programs.git.enable && config.sys.profiles.graphical.enable;
-  };
-
   programs.delta = {
     inherit (config.programs.git) enable;
     enableGitIntegration = true;
