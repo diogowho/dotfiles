@@ -1,0 +1,12 @@
+vim.cmd("source ~/.vimrc")
+require("lsp")
+vim.pack.add(require("plugins"))
+
+require("config.mason")
+require("config.completion")
+require("config.formatter")
+require("config.lualine")
+require("config.mini")
+require("config.telescope")
+require("config.theme")
+require("config.utils")

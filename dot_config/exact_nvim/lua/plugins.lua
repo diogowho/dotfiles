@@ -1,0 +1,17 @@
+return {
+	"https://github.com/catppuccin/nvim",
+	"https://github.com/mhartington/formatter.nvim",
+	"https://github.com/lewis6991/gitsigns.nvim",
+	"https://github.com/nvim-lualine/lualine.nvim",
+	"https://github.com/nvim-mini/mini.nvim",
+	"https://github.com/NeogitOrg/neogit",
+	"https://github.com/SmiteshP/nvim-navic",
+	"https://github.com/nvim-lua/plenary.nvim",
+	"https://github.com/nvim-telescope/telescope.nvim",
+	{ src = "https://github.com/nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+	"https://github.com/nvim-telescope/telescope-file-browser.nvim",
+	"https://github.com/mason-org/mason.nvim",
+	"https://github.com/neovim/nvim-lspconfig",
+	"https://github.com/mason-org/mason-lspconfig.nvim",
+	"https://github.com/vyfor/cord.nvim",
+}

@@ -1,0 +1,75 @@
+[user]
+  email = "hello@diogocastro.net"
+  name = "Diogo"
+  signingKey = "~/.ssh/id_ed25519.pub"
+
+[init]
+  defaultBranch = "main"
+
+[core]
+  excludesfile = "~/.gitignore"
+  attributesFile = "~/.gitattributes"
+
+[alias]
+  cleanup = "!f() { \
+    git fetch upstream; \
+    git checkout main; \
+    git pull upstream main; \
+    git push origin main; \
+    git branch -r --merged | grep -v main | grep origin | sed 's/origin\\///' | gxargs -r -n 1 git push --delete origin; \
+    git branch --merged | grep -v main | gxargs -r -n 1 git branch -d; \
+    git branch -vv | grep ': gone]'|  grep -v '\\*' | awk '{ print $1; }' | gxargs -r git branch -D; \
+    git fetch --all --prune; \
+    git prune; \
+    git gc --aggressive; \
+  }; f"
+	pretty = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+	s = "status -s"
+	wopsy = "commit -a --amend --no-edit"
+
+[color]
+	ui = "auto"
+
+[commit]
+	gpgSign = true
+	verbose = true
+
+[diff]
+	algorithm = "histogram"
+	colorMoved = "plain"
+	mnemonicprefix = true
+
+[fetch]
+	all = true
+	prune = true
+	pruneTags = true
+
+[filter "lfs"]
+  required = true
+	clean = "git-lfs clean -- %f"
+	process = "git-lfs filter-process"
+	smudge = "git-lfs smudge -- %f"
+
+[gpg]
+	format = "ssh"
+
+[merge]
+	conflictstyle = "zdiff3"
+	stat = "true"
+	tool = "meld"
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+
+[rebase]
+	autoSquash = true
+	autostash = true
+	updateRefs = true
+
+[tag]
+	gpgSign = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/

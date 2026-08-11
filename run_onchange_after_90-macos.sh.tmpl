@@ -1,0 +1,19 @@
+#!/bin/sh
+set -eu
+
+{{ if eq .chezmoi.os "darwin" -}}
+
+{{ range (glob (joinPath .chezmoi.sourceDir "macos/*.sh")) -}}
+# {{ . | include | sha256sum }}
+{{ end }}
+
+for script in "{{ .chezmoi.sourceDir }}/macos/"*.sh; do
+    sh "$script"
+done
+
+killall Finder 2>/dev/null || true
+killall Dock 2>/dev/null || true
+killall SystemUIServer 2>/dev/null || true
+killall cfprefsd 2>/dev/null || true
+
+{{ end -}}

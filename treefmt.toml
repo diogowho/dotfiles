@@ -1,0 +1,15 @@
+on-unmatched = "info"
+tree-root-file = ".git/config"
+
+[formatter.shell]
+command = "shfmt"
+includes = [ "dot_zshrc", "dot_zprofile", "dot_zsh_aliases", "*.sh", "*.bash", "*.envrc" ]
+options = ["-s", "-w", "-i", "2"]
+
+[formatter.lua]
+command = "stylua"
+includes = ["*.lua"]
+
+[formatter.sorting]
+command = "keep-sorted"
+includes = ["*"]

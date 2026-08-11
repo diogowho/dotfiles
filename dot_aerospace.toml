@@ -1,0 +1,204 @@
+config-version = 2
+start-at-login = true
+auto-reload-config = true
+
+key-mapping.preset = "qwerty"
+default-root-container-layout = "tiles"
+default-root-container-orientation = "horizontal"
+
+persistent-workspaces = ["1", "2", "3", "4", "5"]
+
+[gaps]
+outer.left = 8
+outer.bottom = 8
+outer.top = 8
+outer.right = 8
+inner.horizontal = 8
+inner.vertical = 8
+
+[mode.main.binding]
+ctrl-h = "focus left"
+ctrl-j = "focus down"
+ctrl-k = "focus up"
+ctrl-l = "focus right"
+
+ctrl-shift-h = "move left"
+ctrl-shift-j = "move down"
+ctrl-shift-k = "move up"
+ctrl-shift-l = "move right"
+
+ctrl-shift-f = "layout tiling floating"
+
+ctrl-1 = "workspace 1"
+ctrl-2 = "workspace 2"
+ctrl-3 = "workspace 3"
+ctrl-4 = "workspace 4"
+ctrl-5 = "workspace 5"
+ctrl-6 = "workspace 6"
+
+ctrl-shift-1 = "move-node-to-workspace 1"
+ctrl-shift-2 = "move-node-to-workspace 2"
+ctrl-shift-3 = "move-node-to-workspace 3"
+ctrl-shift-4 = "move-node-to-workspace 4"
+ctrl-shift-5 = "move-node-to-workspace 5"
+ctrl-shift-6 = "move-node-to-workspace 6"
+
+[[on-window-detected]]
+if.app-id = "com.apple.Safari"
+run = ["move-node-to-workspace 1"]
+
+[[on-window-detected]]
+if.app-id = "net.imput.helium"
+run = ["move-node-to-workspace 1"]
+
+[[on-window-detected]]
+if.app-id = "com.mitchellh.ghostty"
+run = ["move-node-to-workspace 2", "layout tiling"]
+
+[[on-window-detected]]
+if.app-id = "com.utmapp.UTM"
+run = ["move-node-to-workspace 2"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.dt.Xcode"
+run = ["move-node-to-workspace 2"]
+
+[[on-window-detected]]
+if.app-id = "dev.kdrag0n.MacVirt"
+run = ["move-node-to-workspace 2", "layout floating"]
+
+[[on-window-detected]]
+if.app-id = "com.openai.codex"
+run = ["move-node-to-workspace 2", "layout floating"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.iCal"
+run = ["move-node-to-workspace 3"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.Notes"
+run = ["move-node-to-workspace 3"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.reminders"
+run = ["move-node-to-workspace 3"]
+
+[[on-window-detected]]
+if.app-id = "com.bohemiancoding.sketch3"
+run = ["move-node-to-workspace 3"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.journal"
+run = ["move-node-to-workspace 3"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.freeform"
+run = ["move-node-to-workspace 3"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.IconComposer"
+run = ["move-node-to-workspace 3"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.Music"
+run = ["move-node-to-workspace 4"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.podcasts"
+run = ["move-node-to-workspace 4"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.tv"
+run = ["move-node-to-workspace 4"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.iBooksX"
+run = ["move-node-to-workspace 4"]
+
+[[on-window-detected]]
+if.app-id = "com.ranchero.NetNewsWire-Evergreen"
+run = ["move-node-to-workspace 4"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.Photos"
+run = ["move-node-to-workspace 4"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.MobileSMS"
+run = ["move-node-to-workspace 5", "layout floating"]
+
+[[on-window-detected]]
+if.app-id = "dev.vencord.vesktop"
+run = ["move-node-to-workspace 5"]
+
+[[on-window-detected]]
+if.app-id = "org.whispersystems.signal-desktop"
+run = ["move-node-to-workspace 5"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.mail"
+run = ["move-node-to-workspace 5"]
+
+[[on-window-detected]]
+if.app-id = "net.whatsapp.WhatsApp"
+run = ["move-node-to-workspace 5"]
+
+[[on-window-detected]]
+if.app-id = "com.tinyspeck.slackmacgap"
+run = ["move-node-to-workspace 5"]
+
+[[on-window-detected]]
+if.app-id = "com.valvesoftware.steam"
+run = ["move-node-to-workspace 6"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.games"
+run = ["move-node-to-workspace 6"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.finder"
+run = ["layout floating"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.Passwords"
+run = ["layout floating"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.shortcuts"
+run = ["layout floating"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.Home"
+run = ["layout floating"]
+
+[[on-window-detected]]
+if.app-id = "com.mr-brightside.myParcel"
+run = ["layout floating"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.AppStore"
+run = ["layout floating"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.mobilephone"
+run = ["layout floating"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.FaceTime"
+run = ["layout floating"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.TextEdit"
+run = ["layout floating"]
+
+[[on-window-detected]]
+if.app-id = "com.objective-see.Netiquette"
+run = ["layout floating"]
+
+[[on-window-detected]]
+if.app-id = "com.objective-see.lulu.app"
+run = ["layout floating"]
+
+[[on-window-detected]]
+if.app-id = "com.apple.findmy"
+run = ["layout floating"]

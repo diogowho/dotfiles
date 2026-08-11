@@ -1,0 +1,34 @@
+Include ~/.orbstack/ssh/config
+
+Host *
+  addKeysToAgent yes
+  compression yes
+  controlMaster no
+  controlPath ~/.ssh/master-%r@%n:%p
+  controlPersist no
+  hashKnownHosts yes
+  serverAliveCountMax 3
+  serverAliveInterval 0
+  useKeychain yes
+  userKnownHostsFile ~/.ssh/known_hosts
+
+Host rose
+  hostname 217.197.83.237
+
+Host lon1
+  hostname 62.164.141.78
+
+Host tor1
+  hostname 207.174.104.90
+
+Host bgp.tools
+  hostname bgp.tools
+  user lg
+
+Host codeberg.org
+  hostname codeberg.org
+  user git
+
+Host github.com
+  hostname github.com
+  user git
