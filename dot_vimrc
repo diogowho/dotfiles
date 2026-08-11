@@ -1,3 +1,4 @@
+" vim: ft=vim
 let mapleader = " "
 
 set hlsearch

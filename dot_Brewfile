@@ -1,3 +1,4 @@
+# vim: ft=ruby
 # keep-sorted start prefix_order=tap,brew,cask,mas
 tap "diogowho/tap"
 tap "hashicorp/tap"

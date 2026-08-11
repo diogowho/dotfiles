@@ -1,3 +1,4 @@
+# vim: ft=zsh
 PROMPT='%F{blue}%~ %f%(?.%F{magenta}.%F{red})~> %f'
 
 HISTFILE=~/.zsh_history

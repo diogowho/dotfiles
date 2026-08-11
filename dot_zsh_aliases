@@ -1,3 +1,4 @@
+# vim: ft=zsh
 alias birdc='sudo birdc'
 alias cat='bat'
 alias cd='z'
