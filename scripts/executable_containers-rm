@@ -1,0 +1,24 @@
+#!/bin/bash
+set -euo pipefail
+
+if [ "$#" -ne 1 ]; then
+  exit 1
+fi
+
+GROUP="$1"
+
+containers=$(
+  container list --all --format json |
+    jq -r --arg group "$GROUP" '
+      .[]
+      | select(.configuration.labels.group == $group)
+      | .id
+    '
+)
+
+if [ -z "$containers" ]; then
+  echo "No containers found in group '$GROUP'"
+  exit 0
+fi
+
+container delete --force $containers

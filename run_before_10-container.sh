@@ -1,0 +1,13 @@
+#!/bin/bash
+set -eu
+
+if ! container system dns list -q | grep -Fxq 'host.container.internal'; then
+  sudo container system dns create \
+    --localhost 203.0.113.113 \
+    host.container.internal
+fi
+
+container prune 2>/dev/null || true
+container network prune 2>/dev/null || true
+container volume prune 2>/dev/null || true
+container image prune 2>/dev/null || true

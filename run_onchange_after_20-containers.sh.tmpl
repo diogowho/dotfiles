@@ -1,0 +1,59 @@
+#!/bin/bash
+set -euo pipefail
+
+# {{ output "sh" "-c" "if [ -d \"$HOME/Developer/containers\" ]; then find \"$HOME/Developer/containers\" -type f -name '*.sh' -exec shasum -a 256 {} \\; | LC_ALL=C sort | shasum -a 256; fi" }}
+
+CONTAINERS="$HOME/Developer/containers"
+STATE="$HOME/.local/state/containers"
+
+if [ ! -d "$CONTAINERS" ]; then
+  echo "Container declarations directory does not exist: $CONTAINERS"
+  exit 0
+fi
+
+mkdir -p "$STATE"
+
+found=false
+
+for file in "$CONTAINERS"/*.sh; do
+  [ -f "$file" ] || continue
+
+  found=true
+
+  name=$(basename "$file" .sh)
+  state_file="$STATE/$name.sha256"
+
+  hash=$(
+    shasum -a 256 "$file" |
+      awk '{print $1}'
+  )
+
+  old_hash=""
+
+  if [ -f "$state_file" ]; then
+    old_hash=$(cat "$state_file")
+  fi
+
+  if [ "$hash" = "$old_hash" ]; then
+    printf '%s: unchanged\n' "$name"
+    continue
+  fi
+
+  if [ -z "$old_hash" ]; then
+    printf '%s: new, applying\n' "$name"
+  else
+    printf '%s: changed, applying\n' "$name"
+  fi
+
+  if bash "$file"; then
+    printf '%s\n' "$hash" > "$state_file"
+    printf '%s: applied\n' "$name"
+  else
+    printf '%s: failed\n' "$name" >&2
+    exit 1
+  fi
+done
+
+if [ "$found" = false ]; then
+  echo "No container declarations found in $CONTAINERS"
+fi
