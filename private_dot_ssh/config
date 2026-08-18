@@ -1,6 +1,4 @@
 # vim: ft=sshconfig
-Include ~/.orbstack/ssh/config
-
 Host *
   addKeysToAgent yes
   compression yes
@@ -10,7 +8,6 @@ Host *
   hashKnownHosts yes
   serverAliveCountMax 3
   serverAliveInterval 0
-  useKeychain yes
   userKnownHostsFile ~/.ssh/known_hosts
 
 Host rose
