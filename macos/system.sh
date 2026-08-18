@@ -5,7 +5,7 @@ defaults write NSGlobalDomain NSQuitAlwaysKeepsWindow -bool false
 defaults write NSGlobalDomain AppleIconAppearanceTheme -string "RegularAutomatic"
 defaults write com.apple.ActivityMonitor UpdatePeriod -int 2
 defaults write com.apple.AdLib allowApplePersonalizedAdvertising -bool false
-defaults write com.apple.Spotlight EnabledPreferenceRules -array "com.apple.tips" "System.files" "System.folders"
+defaults write com.apple.Spotlight EnabledPreferenceRules -array "com.apple.tips" "System.files" "System.folders" "Custom.relatedContents"
 defaults write com.apple.Spotlight PasteboardHistoryEnabled -bool true
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
 defaults write NSGlobalDomain NSScrollAnimationEnabled -bool true
