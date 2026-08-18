@@ -10,8 +10,8 @@ Host *
   serverAliveInterval 0
   userKnownHostsFile ~/.ssh/known_hosts
 
-Host rose
-  hostname 217.197.83.237
+Host fra1
+  hostname 193.148.249.238
 
 Host lon1
   hostname 62.164.141.78
