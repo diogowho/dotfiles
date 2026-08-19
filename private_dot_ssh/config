@@ -8,6 +8,7 @@ Host *
   hashKnownHosts yes
   serverAliveCountMax 3
   serverAliveInterval 0
+  useKeychain yes
   userKnownHostsFile ~/.ssh/known_hosts
 
 Host fra1
