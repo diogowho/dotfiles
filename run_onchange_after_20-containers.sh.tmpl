@@ -1,6 +1,8 @@
 #!/bin/bash
 set -euo pipefail
 
+{{ if eq .chezmoi.os "darwin" -}}
+
 # {{ output "sh" "-c" "if [ -d \"$HOME/Developer/containers\" ]; then find \"$HOME/Developer/containers\" -type f -name '*.sh' -exec shasum -a 256 {} \\; | LC_ALL=C sort | shasum -a 256; fi" }}
 
 CONTAINERS="$HOME/Developer/containers"
@@ -57,3 +59,5 @@ done
 if [ "$found" = false ]; then
   echo "No container declarations found in $CONTAINERS"
 fi
+
+{{ end -}}
