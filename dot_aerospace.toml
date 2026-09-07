@@ -3,8 +3,10 @@ start-at-login = true
 auto-reload-config = true
 
 key-mapping.preset = "qwerty"
-default-root-container-layout = "tiles"
+default-root-container-layout = "accordion" # tiles
 default-root-container-orientation = "horizontal"
+
+accordion-padding = 0
 
 persistent-workspaces = ["1", "2", "3", "4", "5"]
 
@@ -52,24 +54,16 @@ if.app-id = "net.imput.helium"
 run = ["move-node-to-workspace 1"]
 
 [[on-window-detected]]
+if.app-id = "com.googlecode.iterm2"
+run = ["move-node-to-workspace 2"]
+
+[[on-window-detected]]
 if.app-id = "com.mitchellh.ghostty"
 run = ["move-node-to-workspace 2", "layout tiling"]
 
 [[on-window-detected]]
-if.app-id = "com.utmapp.UTM"
-run = ["move-node-to-workspace 2"]
-
-[[on-window-detected]]
 if.app-id = "com.apple.dt.Xcode"
 run = ["move-node-to-workspace 2"]
-
-[[on-window-detected]]
-if.app-id = "dev.kdrag0n.MacVirt"
-run = ["move-node-to-workspace 2", "layout floating"]
-
-[[on-window-detected]]
-if.app-id = "com.openai.codex"
-run = ["move-node-to-workspace 2", "layout floating"]
 
 [[on-window-detected]]
 if.app-id = "com.apple.iCal"
