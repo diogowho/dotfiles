@@ -14,19 +14,12 @@ Host *
 Host fra1
   hostname 193.148.249.238
 
-Host lon1
-  hostname 62.164.141.78
-
 Host tor1
   hostname 207.174.104.90
 
 Host bgp.tools
   hostname bgp.tools
   user lg
-
-Host codeberg.org
-  hostname codeberg.org
-  user git
 
 Host github.com
   hostname github.com
