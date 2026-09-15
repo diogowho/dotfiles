@@ -1,0 +1,6 @@
+#!/bin/bash
+brew bundle --global install \
+  --force \
+  --upgrade \
+  --force-cleanup \
+  --zap
