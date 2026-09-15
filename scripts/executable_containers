@@ -1,6 +1,0 @@
-#!/bin/bash
-set -euo pipefail
-
-for file in "$HOME/Developer/containers"/*.sh; do
-  bash "$file"
-done
