@@ -52,9 +52,18 @@ cask "orbstack"
 cask "signal"
 cask "sketch"
 cask "vesktop"
-cask "xcodes-app"
 mas "Actions", id: 1586435171
-mas "Klack", id: 6446206067
 mas "WhatsApp", id: 310633997
 mas "WireGuard", id: 1451685025
 # keep-sorted end
+# {{- if eq .chezmoi.hostname "raven" }}
+# keep-sorted start prefix_order=tap,brew,cask,mas
+cask "crossover"
+cask "prismlauncher"
+cask "steam"
+cask "xcodes-app"
+mas "HazeOver", id: 430798174
+mas "Klack", id: 6446206067
+mas "Pixelmator Pro", id: 6746662575
+# keep-sorted end
+# {{- end }}
