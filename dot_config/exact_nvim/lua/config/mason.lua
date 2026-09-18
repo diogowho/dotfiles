@@ -5,6 +5,7 @@ require("mason-lspconfig").setup({
 		-- lsp servers
 		"lua_ls",
 		"astro",
+		"denols",
 		"bashls",
 		"emmet_language_server",
 		"cssls",
@@ -14,7 +15,6 @@ require("mason-lspconfig").setup({
 		"tailwindcss",
 		"terraformls",
 		"vimls",
-		"vtsls",
 		"yamlls",
 		"gopls",
 
