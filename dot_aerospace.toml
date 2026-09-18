@@ -82,6 +82,10 @@ if.app-id = "com.apple.reminders"
 run = ["move-node-to-workspace 3"]
 
 [[on-window-detected]]
+if.app-id = "com.culturedcode.ThingsMac"
+run = ["move-node-to-workspace 3"]
+
+[[on-window-detected]]
 if.app-id = "com.bohemiancoding.sketch3"
 run = ["move-node-to-workspace 3"]
 
@@ -139,10 +143,6 @@ run = ["move-node-to-workspace 5"]
 
 [[on-window-detected]]
 if.app-id = "net.whatsapp.WhatsApp"
-run = ["move-node-to-workspace 5"]
-
-[[on-window-detected]]
-if.app-id = "com.tinyspeck.slackmacgap"
 run = ["move-node-to-workspace 5"]
 
 [[on-window-detected]]
