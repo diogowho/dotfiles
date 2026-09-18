@@ -1,4 +1,6 @@
 # vim: ft=sshconfig
+Include ~/.orbstack/ssh/config
+
 Host *
   addKeysToAgent yes
   compression yes
