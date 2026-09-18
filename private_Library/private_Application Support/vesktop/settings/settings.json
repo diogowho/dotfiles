@@ -66,7 +66,7 @@
             "consistent": "image"
         },
         "AppleMusicRichPresence": {
-            "enabled": false,
+            "enabled": true,
             "refreshInterval": 5,
             "activityType": 2,
             "statusDisplayType": "artist",
@@ -128,7 +128,8 @@
             "format": "stopwatch"
         },
         "CharacterCounter": {
-            "enabled": true
+            "enabled": true,
+            "colorEffects": true
         },
         "ClearURLs": {
             "enabled": true
@@ -714,7 +715,8 @@
             "enabled": true
         },
         "WhoReacted": {
-            "enabled": true
+            "enabled": true,
+            "clickableAvatars": true
         },
         "XSOverlay": {
             "enabled": false
@@ -770,6 +772,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1789412679924
+        "settingsSyncVersion": 1789665548309
     }
 }
