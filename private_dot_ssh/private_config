@@ -13,12 +13,6 @@ Host *
   useKeychain yes
   userKnownHostsFile ~/.ssh/known_hosts
 
-Host fra1
-  hostname 193.148.249.238
-
-Host tor1
-  hostname 207.174.104.90
-
 Host bgp.tools
   hostname bgp.tools
   user lg

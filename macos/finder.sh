@@ -18,4 +18,3 @@ defaults write com.apple.finder _FXSortFoldersFirst -bool true
 defaults write com.apple.finder _FXSortFoldersFirstOnDesktop -bool true
 defaults write com.apple.finder ShowSidebar -bool true
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
-defaults write com.apple.universalaccess showWindowTitlebarIcons -bool true
