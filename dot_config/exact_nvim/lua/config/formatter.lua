@@ -10,6 +10,7 @@ require("formatter").setup({
 		terraform = { require("formatter.filetypes.terraform").terraformfmt },
 		yaml = { require("formatter.filetypes.yaml").yamlfmt },
 		go = { require("formatter.filetypes.go").gofmt },
+		typescriptreact = { require("formatter.filetypes.typescript").prettierd },
 	},
 })
 
