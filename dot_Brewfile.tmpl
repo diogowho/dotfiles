@@ -59,7 +59,6 @@ mas "WireGuard", id: 1451685025
 mas "uBlock Origin Lite", id: 6745342698
 # keep-sorted end
 # {{- if eq .chezmoi.hostname "raven" }}
-# keep-sorted start prefix_order=tap,brew,cask,mas
 cask "crossover"
 cask "prismlauncher"
 cask "steam"
@@ -67,5 +66,10 @@ cask "xcodes-app"
 mas "HazeOver", id: 430798174
 mas "Klack", id: 6446206067
 mas "Pixelmator Pro", id: 6746662575
-# keep-sorted end
+# {{- end }}
+# {{- if eq .chezmoi.hostname "violet" }}
+brew "dotnet"
+cask "helium-browser"
+cask "rider"
+cask "vesktop"
 # {{- end }}
